@@ -8,22 +8,22 @@
 <body>
 <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 
-<form id="email-form" action="" method="POST" target="no-target">
-  <input id="email" type="email" placeholder="enter email" name="email">
-  <button id="email-submit" type="submit">SUBMIT</button>
+<form id="input-form" action="" method="POST" target="no-target">
+  <input id="input-name" placeholder="enter name" name="name">
+  <button id="form-submit" type="submit">SUBMIT</button>
 </form>
 
 <iframe src="#" id="no-target" name="no-target" style="visibility:hidden"></iframe>
 
 <script>
-    $('#email-form').one('submit',function(){
-        var emailAddress = encodeURIComponent($('#email').val());
+    $('#input-form').one('submit',function(){
+        var inputName = encodeURIComponent($('#input-name').val());
         var baseURL = 'https://docs.google.com/forms/d/18LD6ueL10_lLVAKpDgfmLpUBlzoRFEZSoMod57MXfH0/formResponse?entry.1000000=';
         var submitRef = '&submit=Submit';
-        var submitURL = (baseURL + emailAddress + submitRef);
+        var submitURL = (baseURL + inputName + submitRef);
         console.log(submitURL);
         $(this)[0].action=submitURL;
-        $('#email').addClass('active').val('Thank You!');
+        $('#input-name').addClass('active').val('Thank You!');
     });
 </script>
 
