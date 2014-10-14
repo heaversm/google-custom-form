@@ -17,8 +17,8 @@
 
 <script>
     $('#input-form').one('submit',function(){
-        var submitURL = ($(this).attr('action') + '?' + $(this).serialize());
-        $(this)[0].action=submitURL;
+        var submitURL = ($('#input-form').attr('action') + '?' + $('#input-form').serialize());
+        $(this)[0].action = submitURL;
         $('#input-name').addClass('active').val('Thank You!');
     });
 </script>
