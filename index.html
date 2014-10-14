@@ -17,10 +17,9 @@
 
 <script>
     $('#input-form').one('submit',function(){
-        var inputName = encodeURIComponent($('#input-name').val());
         var baseURL = 'https://docs.google.com/forms/d/18LD6ueL10_lLVAKpDgfmLpUBlzoRFEZSoMod57MXfH0/formResponse?entry.1000000=';
         var submitRef = '&submit=Submit';
-        var submitURL = (baseURL + inputName + submitRef);
+        var submitURL = (baseURL + $(this).serialize());
         console.log(submitURL);
         $(this)[0].action=submitURL;
         $('#input-name').addClass('active').val('Thank You!');
