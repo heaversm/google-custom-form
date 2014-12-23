@@ -29,3 +29,6 @@ $('#emailForm').one('submit',function(){
 ```
 
 * Style your page how you like, put in any sort of behavior you want to have happen when someone submits an entry (we're just having the form field say 'Thank You!'), then put these files on a web server somewhere, and you should now be able to submit data to your custom form, and see it appear in your Google Spreadsheet.
+* 
+
+URL Tricks for Google Forms can be found <a href="http://justingale.com/2013/09/url-tricks-for-google-forms-pre-populate-and-automatically-submitting-responses/">here</a>
