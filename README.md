@@ -3,6 +3,10 @@ google-custom-form
 
 Submit to a google spreadsheet using a form of your own design.
 
+###NOTE:
+
+You can submit and view responses, but please do not edit the field values in the google spreadsheet or custom form itself! Doing so will break the example for everyone else. Someone changed the form questions and where they were sent to and so things were down for a while. Thanks!
+
 ###INSTRUCTIONS:
 
 * Build a google form with a question that you want to collect data for, and make sure it is public.
@@ -47,7 +51,7 @@ entry.1=answer1&entry.2=answer2&entry3=answer3
 
 etc.
 
-You can view the multi-question form [here](https://docs.google.com/forms/d/1s0r2Cl5rDGMqD8u08BgUO7lvDrvO9Dr1nm9MsrWxOxQ), and the multi-question spreadsheet [here](https://docs.google.com/spreadsheets/d/1w85vK4K-aUH0zGOXAxlQ71lGA5KypdvdI0kADbB0jtc/edit#gid=567095505)
+You can view the multi-question form [here](https://docs.google.com/forms/d/1s0r2Cl5rDGMqD8u08BgUO7lvDrvO9Dr1nm9MsrWxOxQ), and the multi-question spreadsheet [here](https://docs.google.com/spreadsheets/d/1w85vK4K-aUH0zGOXAxlQ71lGA5KypdvdI0kADbB0jtc/edit#gid=567095505), as well as see a working example of a [standalone form here](http://mikeheavers.com/prototypes/google/forms/custom-form.html)
 
 
 Good luck!
