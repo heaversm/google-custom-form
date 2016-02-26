@@ -14,6 +14,8 @@
   <button id="form-submit" type="submit">SUBMIT</button>
 </form>
 
+<p id="input-feedback"></p>
+
 <iframe src="#" id="no-target" name="no-target" style="visibility:hidden"></iframe>
 
 <script>
@@ -28,7 +30,7 @@
         var submitURL = (baseURL + q1ID + "=" + inputq1 + "&" + q2ID + "=" + inputq2 + submitRef);
         console.log(submitURL);
         $(this)[0].action=submitURL;
-        $('#input-name').addClass('active').val('Thank You!');
+        $('#input-feedback').text('Thank You!');
     });
 </script>
 
