@@ -51,7 +51,7 @@ entry.1=answer1&entry.2=answer2&entry3=answer3
 
 etc.
 
-You can view the multi-question form [here](https://docs.google.com/forms/d/1s0r2Cl5rDGMqD8u08BgUO7lvDrvO9Dr1nm9MsrWxOxQ), and the multi-question spreadsheet [here](https://docs.google.com/spreadsheets/d/1w85vK4K-aUH0zGOXAxlQ71lGA5KypdvdI0kADbB0jtc/edit#gid=567095505), as well as see a working example of a [standalone form here](http://mikeheavers.com/prototypes/google/forms/custom-form.html)
+You can view the multi-question form [here](https://docs.google.com/forms/d/1s0r2Cl5rDGMqD8u08BgUO7lvDrvO9Dr1nm9MsrWxOxQ), and the multi-question spreadsheet [here](https://docs.google.com/spreadsheets/d/1w85vK4K-aUH0zGOXAxlQ71lGA5KypdvdI0kADbB0jtc/edit#gid=567095505), as well as see a working example of a [standalone form here](http://mikeheavers.com/lab/google/forms/custom-form.html)
 
 
 Good luck!
