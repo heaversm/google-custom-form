@@ -5,7 +5,7 @@ Submit to a google spreadsheet using a form of your own design.
 
 ###NOTE (8/4/2016):
 
-I used to have a live demo up, but people kept changing the form itself, thus breaking it, so I have removed the live example. Follow the instructions and you will still be able to make this work in your own code / forms.
+I have updated this documentation to keep up with the changes Google has made to forms. The process now varies slightly from when this readme was originally published.
 
 ###INSTRUCTIONS:
 
