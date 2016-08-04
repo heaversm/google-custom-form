@@ -3,9 +3,9 @@ google-custom-form
 
 Submit to a google spreadsheet using a form of your own design.
 
-###NOTE:
+###NOTE (8/4/2016):
 
-You can submit and view responses, but please do not edit the field values in the google spreadsheet or custom form itself! Doing so will break the example for everyone else. Someone changed the form questions and where they were sent to and so things were down for a while. Thanks!
+I used to have a live demo up, but people kept changing the form itself, thus breaking it, so I have removed the live example. Follow the instructions and you will still be able to make this work in your own code / forms.
 
 ###INSTRUCTIONS:
 
@@ -50,8 +50,5 @@ where you just keep separating each question and answer with an ampersand.
 entry.1=answer1&entry.2=answer2&entry3=answer3
 
 etc.
-
-You can view the multi-question form [here](https://docs.google.com/forms/d/1s0r2Cl5rDGMqD8u08BgUO7lvDrvO9Dr1nm9MsrWxOxQ), and the multi-question spreadsheet [here](https://docs.google.com/spreadsheets/d/1w85vK4K-aUH0zGOXAxlQ71lGA5KypdvdI0kADbB0jtc/edit#gid=567095505), as well as see a working example of a [standalone form here](http://mikeheavers.com/lab/google/forms/custom-form.html)
-
 
 Good luck!
