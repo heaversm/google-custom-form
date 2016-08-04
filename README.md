@@ -9,18 +9,28 @@ I used to have a live demo up, but people kept changing the form itself, thus br
 
 ###INSTRUCTIONS:
 
-* Build a google form with a question that you want to collect data for, and make sure it is public.
+* Build a google form with a question that you want to collect data for, and make sure it is public. View the form, and click on the "responses" tab. In the settings for the form (the 3 dots in the upper right) choose "select response destination" and make sure it logs to a new spreadsheet.
 
-* View the form : Form > Go To Live Form
+* View the form by clicking the "eye" icon in the upper right at the top of the page.
 
-*  View the source of this page, and capture the URL in the `action` attribute of the `form` tag: ex:
+*  On the live form page where you can submit responses, view the source of the page, and capture the URL in the `action` attribute of the `form` tag: ex:
 `https://docs.google.com/forms/d/18LD6ueL10_lLVAKpDgfmLpUBlzoRFEZSoMod57MXfH0/formResponse?hl=en_US` getting rid of everything after `formResponse?`.
 
-* Now view the source of your question input field, and copy the `name` attribute, ex: `entry.1000000`. Do the same with the submit button, ex: `<input type="submit" name="submit" value="Submit">`.
+* Now search the source of the page for this: 
+
+```
+<input type="hidden" name="entry.
+```
+
+Google hides the actual form input fields, so you have to search for them this way, in the source, not the web inspector (note that you cannot just do the typical "inspect" of the input element in the form, as this will not be the correct input field).
+
+the `name` attribute, ex: `entry.1000000`. 
+
+They do the same with the submit button, but it should be just before the closing form tag, with a name (which I think stays the same) like: `<input type="hidden" name="fbzx" value="7262277203133674908">`. That value 
 
 * Replace the `baseURL` in the index.html file with the form action URL you copied from your Google Form.
 
-* Replace the `submitRef` variable in the index.html file with the name and value from your submit button, ex: `&submit=Submit`.
+* Replace the `submitRef` variable in the index.html file with the name and value from your submit button, ex: `&submit=7262277203133674908`.
 
 * In our form, we are collecting names, so we've given our form an ID of `input-form` and we've given our field an ID of `input-name`. You should change this to whatever information you are collecting in your form, and change the javascript so that JQuery is grabbing the right field's value. For example, if your form has an ID of `emailForm` and your field has an ID of `input id="emailField"` your javascript should be changed to:
 
@@ -51,4 +61,6 @@ entry.1=answer1&entry.2=answer2&entry3=answer3
 
 etc.
 
-Good luck!
+Good luck! I have put my own sample form online [here](http://mikeheavers.com/lab/google/forms/custom-form.html) and you can view the spreadsheet with the form responses [here](https://docs.google.com/spreadsheets/d/1mzPTZC2YbQpN5IK07Fj4sENj6zajNu6TbFcHo7lD45o).
+
+
