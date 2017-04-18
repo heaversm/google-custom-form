@@ -3,11 +3,11 @@ google-custom-form
 
 Submit to a google spreadsheet using a form of your own design.
 
-###NOTE (8/4/2016):
+### NOTE (8/4/2016):
 
 I have updated this documentation to keep up with the changes Google has made to forms. The process now varies slightly from when this readme was originally published.
 
-###INSTRUCTIONS:
+### INSTRUCTIONS:
 
 * Build a google form with a question that you want to collect data for, and make sure it is public. View the form, and click on the "responses" tab. In the settings for the form (the 3 dots in the upper right) choose "select response destination" and make sure it logs to a new spreadsheet.
 
@@ -45,7 +45,7 @@ $('#emailForm').one('submit',function(){
 * Style your page how you like, put in any sort of behavior you want to have happen when someone submits an entry (we're just having the form field say 'Thank You!'), then put these files on a web server somewhere, and you should now be able to submit data to your custom form, and see it appear in your Google Spreadsheet.
 
 
-###MULTIPLE QUESTIONS:
+### MULTIPLE QUESTIONS:
 
 Some people have asked about incorporating multiple questions, so I've included an `index2.html` file which shows a form with two questions.
 
